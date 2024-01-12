@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #328e8b;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    background-color: #1d2133;
+    color: #328e8b;
+    text-align: center;
+    font-size: x-large;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type='text'] {
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    font-size: medium;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input[type='text']::placeholder {
+    color: white;
+}
+
+input:focus,
+input:active {
+    outline: none;
+    border: none;
+}
+
+input[type='submit'] {
+    background-color: #1d2133;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+#weather-container.visible {
+    background-color: #1d2133;
+    /* top and bottom | left and right */
+    padding: 15px 100px;
+    margin-top: 70px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather-container h2 {
+    color: #328e8b;
+}
